@@ -7,6 +7,44 @@ body {
     font-family: sans-serif;
     line-height: 1.6;
     margin: 20px;
+    display: flex;
+}
+nav {
+    width: 200px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    position: fixed; /* Make navigation fixed */
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    background-color: white; /* Ensure background color to cover content */
+    padding-top: 20px; /* Add some top padding for better spacing */
+}
+nav h2 {
+    margin-left: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    margin-bottom: 10px;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: #f0f0f0;
+}
+.content {
+    flex-grow: 1;
+    padding-left: 240px; /* Adjust padding to accommodate fixed navigation width */
 }
 .email-section {
     border: 1px solid #ddd;
@@ -32,383 +70,399 @@ body {
 </head>
 <body>
 
-<h1>SA BEAUTÉ NATURELLE Email Flows</h1>
+<nav>
+    <h2>Email Flows</h2>
+    <ul>
+        <li><a href="#welcome-series">Welcome Series</a></li>
+        <li><a href="#abandoned-cart-flow">Abandoned Cart Flow</a></li>
+        <li><a href="#browse-abandonment-flow">Browse Abandonment Flow</a></li>
+        <li><a href="#post-purchase-flow">Post-Purchase Flow</a></li>
+        <li><a href="#winback-re-engagement-flow">Winback/Re-Engagement Flow</a></li>
+        <li><a href="#vip-loyalty-flow">VIP & Loyalty Flow</a></li>
+    </ul>
+</nav>
 
-<div class="email-section">
-    <h2>Welcome Series (3-Email Sequence)</h2>
+<div class="content">
+    <h1>SA BEAUTÉ NATURELLE Email Flows</h1>
 
-    <div class="email-section">
-        <h3>Email 1: Welcome to SA BEAUTÉ NATURELLE (Sent Immediately)</h3>
-        <p><strong>Subject:</strong> Welcome to Luxurious, Nature-Powered Skincare 🌿✨</p>
-        <p><strong>Preview Text:</strong> Hydrating, palm oil-free, and handcrafted with care—your skin will thank you.</p>
-        <p><strong>Header:</strong> Your Skin Deserves the Best—Naturally.</p>
-        <p><strong>Body:</strong></p>
-        <p>Welcome to SA BEAUTÉ NATURELLE, where skincare meets luxury and sustainability. Our handcrafted soaps aren’t just about cleansing—they’re designed to nourish, hydrate, and protect your skin with glycerin-rich, palm oil-free, and ethically sourced ingredients.</p>
-        <p>Why customers love us:</p>
-        <ul>
-            <li>✅ Deep Hydration: We retain glycerin—a powerful moisturizer that many brands remove.</li>
-            <li>✅ Palm Oil-Free: Protects your skin and the environment.</li>
-            <li>✅ Small-Batch Luxury: Handcrafted with premium oils, goat’s milk, and botanical extracts.</li>
-            <li>✅ Giving Back: $1 from every soap purchase goes to the World Wildlife Fund.</li>
-        </ul>
-        <p>🛍️ Exclusive Welcome Gift: Enjoy 10% off your first purchase with code WELCOME10.</p>
-        <a href="https://apdg21.github.io/BEAUTE/WelcomeSaBeaute.html">Shop Now</a>
+    <div class="email-section" id="welcome-series">
+        <h2>Welcome Series (3-Email Sequence)</h2>
+
+        <div class="email-section">
+            <h3>Email 1: Welcome to SA BEAUTÉ NATURELLE (Sent Immediately)</h3>
+            <p><strong>Subject:</strong> Welcome to Luxurious, Nature-Powered Skincare 🌿✨</p>
+            <p><strong>Preview Text:</strong> Hydrating, palm oil-free, and handcrafted with care—your skin will thank you.</p>
+            <p><strong>Header:</strong> Your Skin Deserves the Best—Naturally.</p>
+            <p><strong>Body:</strong></p>
+            <p>Welcome to SA BEAUTÉ NATURELLE, where skincare meets luxury and sustainability. Our handcrafted soaps aren’t just about cleansing—they’re designed to nourish, hydrate, and protect your skin with glycerin-rich, palm oil-free, and ethically sourced ingredients.</p>
+            <p>Why customers love us:</p>
+            <ul>
+                <li>✅ Deep Hydration: We retain glycerin—a powerful moisturizer that many brands remove.</li>
+                <li>✅ Palm Oil-Free: Protects your skin and the environment.</li>
+                <li>✅ Small-Batch Luxury: Handcrafted with premium oils, goat’s milk, and botanical extracts.</li>
+                <li>✅ Giving Back: $1 from every soap purchase goes to the World Wildlife Fund.</li>
+            </ul>
+            <p>🛍️ Exclusive Welcome Gift: Enjoy 10% off your first purchase with code WELCOME10.</p>
+            <a href="https://apdg21.github.io/BEAUTE/WelcomeSaBeaute.html">Shop Now</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 2: What Makes Our Soap Different? (Sent 2 Days Later)</h3>
+            <p><strong>Subject:</strong> What’s in your soap? (Ours is different.)</p>
+            <p><strong>Preview Text:</strong> Not all soaps are created equal. Here’s why ours stands out.</p>
+            <p><strong>Header:</strong> The Secret to Healthier, Hydrated Skin ✨</p>
+            <p><strong>Body:</strong></p>
+            <p>Many mass-produced soaps strip away glycerin, leaving your skin dry. Ours retains every drop, so your skin stays soft, moisturized, and never stripped.</p>
+            <p>🌱 What’s Inside?</p>
+            <ul>
+                <li>✔️ Glycerin-Rich Hydration – Seals in moisture naturally.</li>
+                <li>✔️ Fresh Goat’s Milk – Soothes sensitive skin & reduces irritation.</li>
+                <li>✔️ Shea Butter & Organic Oils – Deeply nourish & restore skin elasticity.</li>
+                <li>✔️ No Palm Oil. No Harsh Chemicals. No Compromises.</li>
+            </ul>
+            <p>Your skin deserves more than just a soap. It deserves a ritual.</p>
+            <p>🔹 Try it today & get 10% off with WELCOME10.</p>
+            <a href="https://apdg21.github.io/BEAUTE/welcomemail2">Explore the Collection</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 3: Last Chance – Your Exclusive Offer is Expiring! (Sent 5 Days Later)</h3>
+            <p><strong>Subject:</strong> Final Reminder: Your 10% Off Ends Soon!</p>
+            <p><strong>Preview Text:</strong> Don’t miss out on nature-powered skincare at an exclusive discount.</p>
+            <p><strong>Header:</strong> Don’t Miss Out – Your Skin Will Thank You!</p>
+            <p><strong>Body:</strong></p>
+            <p>You’re one step away from experiencing luxurious, nature-powered skincare. With handcrafted, moisture-rich, palm oil-free soap, your skin will feel softer, healthier, and truly pampered.</p>
+            <p>🚨 Last chance to use your exclusive 10% discount!</p>
+            <p>Use code WELCOME10 at checkout before it expires.</p>
+            <a href="#">Claim Your Discount</a>
+        </div>
     </div>
 
-    <div class="email-section">
-        <h3>Email 2: What Makes Our Soap Different? (Sent 2 Days Later)</h3>
-        <p><strong>Subject:</strong> What’s in your soap? (Ours is different.)</p>
-        <p><strong>Preview Text:</strong> Not all soaps are created equal. Here’s why ours stands out.</p>
-        <p><strong>Header:</strong> The Secret to Healthier, Hydrated Skin ✨</p>
-        <p><strong>Body:</strong></p>
-        <p>Many mass-produced soaps strip away glycerin, leaving your skin dry. Ours retains every drop, so your skin stays soft, moisturized, and never stripped.</p>
-        <p>🌱 What’s Inside?</p>
-        <ul>
-            <li>✔️ Glycerin-Rich Hydration – Seals in moisture naturally.</li>
-            <li>✔️ Fresh Goat’s Milk – Soothes sensitive skin & reduces irritation.</li>
-            <li>✔️ Shea Butter & Organic Oils – Deeply nourish & restore skin elasticity.</li>
-            <li>✔️ No Palm Oil. No Harsh Chemicals. No Compromises.</li>
-        </ul>
-        <p>Your skin deserves more than just a soap. It deserves a ritual.</p>
-        <p>🔹 Try it today & get 10% off with WELCOME10.</p>
-        <a href="https://apdg21.github.io/BEAUTE/welcomemail2">Explore the Collection</a>
+    <div class="email-section" id="abandoned-cart-flow">
+        <h2>Abandoned Cart Flow (3-Email Sequence)</h2>
+
+        <div class="email-section">
+            <h3>Email 1: You Left Something Special Behind (Sent 1 Hour After Abandonment)</h3>
+            <p><strong>Subject:</strong> Oops, you forgot something… but your cart is waiting!</p>
+            <p><strong>Preview Text:</strong> Your luxury skincare awaits—come back and complete your order.</p>
+            <p><strong>Header:</strong> Your Skin Deserves This 💖</p>
+            <p><strong>Body:</strong></p>
+            <p>We noticed you left some skin-loving, nature-powered products behind! Your cart is still waiting for you, and so is luxuriously soft, hydrated skin.</p>
+            <p>✨ Why come back?</p>
+            <ul>
+                <li>✔️ Glycerin-Rich Moisture – Unlike other brands, we retain all the glycerin for superior hydration.</li>
+                <li>✔️ Palm Oil-Free – Protect your skin and the planet.</li>
+                <li>✔️ Handcrafted & Small Batch – Made with premium organic oils and fresh goat’s milk.</li>
+                <li>✔️ Eco-Conscious Giving – Every purchase supports the World Wildlife Fund.</li>
+            </ul>
+            <p>🛍️ Come back now and complete your order before your favorites sell out!</p>
+            <a href="#">Return to Your Cart</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 2: Your Skin Will Thank You (And So Will the Planet!) (Sent 24 Hours Later)</h3>
+            <p><strong>Subject:</strong> A little reminder: Your cart is waiting!</p>
+            <p><strong>Preview Text:</strong> Nourishing, palm oil-free skincare is just one step away.</p>
+            <p><strong>Header:</strong> Still Thinking About It? Here’s Why You’ll Love It 💕</p>
+            <p><strong>Body:</strong></p>
+            <p>We totally get it—life gets busy. But your skin deserves the best, and so do you!</p>
+            <p>🌿 What makes SA BEAUTÉ NATURELLE different?</p>
+            <ul>
+                <li>✔️ We retain all the glycerin for extra moisture—most brands remove it.</li>
+                <li>✔️ Fresh Goat’s Milk & Shea Butter deeply nourish sensitive skin.</li>
+                <li>✔️ Zero Palm Oil & Toxins—just pure, skin-loving goodness.</li>
+                <li>✔️ $1 donated to WWF with every soap purchase.</li>
+            </ul>
+            <p>📦 Your cart is still here, but we can’t hold it forever! Complete your order today and treat your skin to the luxury it deserves.</p>
+            <a href="#">Return to Your Cart</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 3: Final Call – Your Cart Is About to Expire! (Sent 48 Hours Later)</h3>
+            <p><strong>Subject:</strong> Last Chance! Your cart is expiring soon.</p>
+            <p><strong>Preview Text:</strong> Don’t miss out—your skin deserves this luxury.</p>
+            <p><strong>Header:</strong> 🚨 Your Cart Is Almost Gone!</p>
+            <p><strong>Body:</strong></p>
+            <p>This is your last reminder—your cart is about to expire, and we wouldn’t want you to miss out on hydrated, healthy skin.</p>
+            <p>✨ Still deciding? Let’s make it easier:</p>
+            <ul>
+                <li>✔️ Fast shipping – Your order will be on its way in no time!</li>
+                <li>✔️ Small-batch luxury – We don’t mass-produce, so stock is limited.</li>
+                <li>✔️ 100% satisfaction guarantee – We know you’ll love it!</li>
+            </ul>
+            <p>⚡ Complete your order now before your items disappear!</p>
+            <a href="#">Return to Your Cart</a>
+        </div>
     </div>
 
-    <div class="email-section">
-        <h3>Email 3: Last Chance – Your Exclusive Offer is Expiring! (Sent 5 Days Later)</h3>
-        <p><strong>Subject:</strong> Final Reminder: Your 10% Off Ends Soon!</p>
-        <p><strong>Preview Text:</strong> Don’t miss out on nature-powered skincare at an exclusive discount.</p>
-        <p><strong>Header:</strong> Don’t Miss Out – Your Skin Will Thank You!</p>
-        <p><strong>Body:</strong></p>
-        <p>You’re one step away from experiencing luxurious, nature-powered skincare. With handcrafted, moisture-rich, palm oil-free soap, your skin will feel softer, healthier, and truly pampered.</p>
-        <p>🚨 Last chance to use your exclusive 10% discount!</p>
-        <p>Use code WELCOME10 at checkout before it expires.</p>
-        <a href="#">Claim Your Discount</a>
+    <div class="email-section" id="browse-abandonment-flow">
+        <h2>Browse Abandonment Flow (3-Email Sequence)</h2>
+
+        <div class="email-section">
+            <h3>Email 1: Thinking About It? Here’s Why You’ll Love It! (Sent 1 Hour After Browsing)</h3>
+            <p><strong>Subject:</strong> Loved by skin. Approved by nature. 💚</p>
+            <p><strong>Preview Text:</strong> Natural, palm oil-free skincare designed for you.</p>
+            <p><strong>Header:</strong> Did Something Catch Your Eye? 👀</p>
+            <p><strong>Body:</strong></p>
+            <p>We noticed you were exploring our luxurious, handcrafted skincare—and we don’t blame you! Each product is made with skin-nourishing ingredients like fresh goat’s milk, shea butter, and organic oils, designed to leave your skin soft, hydrated, and glowing.</p>
+            <p>🌿 What makes SA BEAUTÉ NATURELLE different?</p>
+            <ul>
+                <li>✔️ Palm Oil-Free – No rainforest destruction, just pure, clean skincare.</li>
+                <li>✔️ Glycerin-Rich – Unlike big brands, we keep all the natural moisture in.</li>
+                <li>✔️ Handcrafted in Small Batches – No mass production, just quality.</li>
+                <li>✔️ Giving Back – Every soap purchase donates $1 to the WWF.</li>
+            </ul>
+            <p>✨ Your skin deserves the best—why not treat yourself today?</p>
+            <a href="#">Shop Now</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 2: Your Skin Will Thank You! (Sent 24 Hours Later)</h3>
+            <p><strong>Subject:</strong> Nature’s best ingredients—ready when you are.</p>
+            <p><strong>Preview Text:</strong> Clean, nourishing skincare made for you.</p>
+            <p><strong>Header:</strong> Skin-Loving, Earth-Friendly, and Waiting for You 💖</p>
+            <p><strong>Body:</strong></p>
+            <p>Still thinking about it? We get it—choosing the right skincare matters. That’s why we craft every bar with nature’s most hydrating and soothing ingredients to give your skin the love it deserves.</p>
+            <p>🌟 The SA BEAUTÉ NATURELLE Difference</p>
+            <ul>
+                <li>✔️ Shea Butter & Fresh Goat’s Milk – Deeply nourish & restore moisture.</li>
+                <li>✔️ 100% Palm Oil-Free – Gentle on skin, kind to the planet.</li>
+                <li>✔️ Rich in Vitamins & Antioxidants – Supports skin health naturally.</li>
+            </ul>
+            <p>💚 Your perfect skincare match is waiting. Ready to experience the difference?</p>
+            <a href="#">Discover the Collection</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 3: Limited Stock Alert – Your Favorites Might Sell Out! (Sent 48 Hours Later)</h3>
+            <p><strong>Subject:</strong> Don’t wait too long… our handmade products sell fast!</p>
+            <p><strong>Preview Text:</strong> Get yours before it’s gone!</p>
+            <p><strong>Header:</strong> 🌿 Handcrafted in Small Batches—Don’t Miss Out!</p>
+            <p><strong>Body:</strong></p>
+            <p>Our products aren’t mass-produced, which means once they’re gone, they’re gone. If you were eyeing one of our bestsellers, now’s the time to grab it before it sells out!</p>
+            <p>🚨 Limited Stock Alert:</p>
+            <ul>
+                <li>✔️ 100% Natural & Small-Batch – No artificial junk, just pure skincare.</li>
+                <li>✔️ Palm Oil-Free & Eco-Friendly – Feel good about what you put on your skin.</li>
+                <li>✔️ $1 Donated to WWF – Your purchase supports wildlife conservation.</li>
+            </ul>
+            <p>⏳ Don’t let your favorites slip away—shop now while they’re still available!</p>
+            <a href="#">Get Yours Now</a>
+        </div>
     </div>
+
+    <div class="email-section" id="post-purchase-flow">
+        <h2>Post-Purchase Flow (5-Email Sequence)</h2>
+
+        <div class="email-section">
+            <h3>Email 1: Order Confirmation & Warm Welcome (Sent Immediately After Purchase)</h3>
+            <p><strong>Subject:</strong> Your Order is Confirmed! Here’s What’s Next 💚</p>
+            <p><strong>Preview Text:</strong> Thank you for choosing SA BEAUTÉ NATURELLE! Your skin (and the planet) will thank you.</p>
+            <p><strong>Header:</strong> Thank You for Your Order! 🌿</p>
+            <p><strong>Body:</strong></p>
+            <p>Your SA BEAUTÉ NATURELLE products are on their way! We’re so excited for you to experience the luxury of natural, palm oil-free skincare.</p>
+            <p>✨ What makes your order special?</p>
+            <ul>
+                <li>✔️ Glycerin-Rich & Moisturizing – Unlike commercial soaps, we retain all-natural hydration.</li>
+                <li>✔️ 100% Palm Oil-Free – A choice that’s better for your skin and the planet.</li>
+                <li>✔️ $1 Donated to WWF – With every soap you buy, you help protect wildlife.</li>
+            </ul>
+            <p>📦 Order Details: [Order Summary]</p>
+            <p>💌 Follow us on Instagram for skincare tips & exclusive offers! [Follow Us]</p>
+            <p>Thank you for supporting small-batch, eco-conscious skincare!</p>
+            <a href="#">View Your Order</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 2: How to Get the Most Out of Your Products (Sent 3 Days After Delivery)</h3>
+            <p><strong>Subject:</strong> Tips to Make Your Skincare Last Longer!</p>
+            <p><strong>Preview Text:</strong> Maximize the benefits of your handcrafted soap & washcloth.</p>
+            <p><strong>Header:</strong> Your Skincare Experience Just Got Better ✨</p>
+            <p><strong>Body:</strong></p>
+            <p>Your SA BEAUTÉ NATURELLE products are designed for luxurious self-care. Here’s how to make the most of them:</p>
+            <p>🧼 For Your Soap:</p>
+            <p>Use a soap dish with drainage to keep it dry between uses (this helps it last longer!).</p>
+            <p>Pair with our Bamboo Washcloth for gentle exfoliation & deeper cleansing.</p>
+            <p>Store in a cool, dry place to maintain freshness.</p>
+            <p>🌿 For Your Bamboo Washcloth:</p>
+            <p>Machine wash cold & air dry for the best longevity.</p>
+            <p>Avoid fabric softeners—bamboo stays soft naturally!</p>
+            <p>💖 Enjoy your skin-loving routine, and let us know if you have any questions!</p>
+            <a href="#">Read More Tips</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 3: We’d Love Your Feedback! (Sent 7 Days After Delivery)</h3>
+            <p><strong>Subject:</strong> Love Your New Skincare? Let Us Know! 💬</p>
+            <p><strong>Preview Text:</strong> Your experience matters. Share your thoughts & help others!</p>
+            <p><strong>Header:</strong> Your Honest Review Means the World to Us! 🌍</p>
+            <p><strong>Body:</strong></p>
+            <p>You’ve had time to experience your handcrafted, eco-friendly skincare—now we’d love to hear what you think!</p>
+            <p>💬 Why leave a review?</p>
+            <ul>
+                <li>✔️ Help fellow skincare lovers discover the right products.</li>
+                <li>✔️ Support a small business that cares about quality & sustainability.</li>
+                <li>✔️ Be part of our mission to create ethical, palm oil-free skincare.</li>
+            </ul>
+            <p>It only takes 30 seconds, and as a thank-you, you’ll get 10% off your next order!</p>
+            <a href="#">Leave a Review</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 4: Exclusive Thank-You Offer (Sent 14 Days After Delivery)</h3>
+            <p><strong>Subject:</strong> A Special Thank-You – Just for You! 🎁</p>
+            <p><strong>Preview Text:</strong> Enjoy 15% off your next purchase as a token of our appreciation.</p>
+            <p><strong>Header:</strong> A Gift for You: 15% Off Your Next Order! 🎉</p>
+            <p><strong>Body:</strong></p>
+            <p>We’re so grateful to have you as part of the SA BEAUTÉ NATURELLE family! As a token of our appreciation, here’s 15% off your next order.</p>
+            <p>✨ Use Code: THANKYOU15 at checkout.</p>
+            <p>📌 Why shop again?</p>
+            <ul>
+                <li>✔️ Limited-edition, small-batch products – Once they’re gone, they’re gone!</li>
+                <li>✔️ Skin-Loving Ingredients – Organic oils, goat’s milk & shea butter for ultimate hydration.</li>
+                <li>✔️ Every Purchase Gives Back – Your support helps protect wildlife.</li>
+            </ul>
+            <a href="#">Redeem Your 15% Off</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 5: What’s Next? (Loyalty & Referral Incentive) (Sent 21 Days After Delivery)</h3>
+            <p><strong>Subject:</strong> Be a Skincare Insider – Get Rewards!</p>
+            <p><strong>Preview Text:</strong> Get rewarded for sharing your favorite skincare.</p>
+            <p><strong>Header:</strong> Love Your Skincare? Share & Earn Rewards! 🎉</p>
+            <p><strong>Body:</strong></p>
+            <p>You’ve found your perfect skincare match—now, why not share it?</p>
+            <p>🌟 Join Our Referral Program!</p>
+            <p>📣 Give 15%, Get 15% – Share SA BEAUTÉ NATURELLE with a friend, and both of you get 15% off.</p>
+            <p>✨ Why refer a friend?</p>
+            <ul>
+                <li>✔️ Help someone discover luxurious, skin-nourishing products.</li>
+                <li>✔️ Support palm oil-free, eco-conscious skincare.</li>
+                <li>✔️ Earn exclusive perks & discounts!</li>
+            </ul>
+            <a href="#">Refer a Friend & Save</a>
+        </div>
+    </div>
+
+    <div class="email-section" id="winback-re-engagement-flow">
+        <h2>Winback/Re-Engagement Flow (3-Email Sequence)</h2>
+
+        <div class="email-section">
+            <h3>Email 1: We Miss You! Enjoy a Special Treat 🎁</h3>
+            <p><strong>Subject:</strong> It’s Been a While—Here’s 10% Off Just for You!</p>
+            <p><strong>Preview Text:</strong> Come back and experience the luxury of natural skincare again.</p>
+            <p><strong>Header:</strong> Your Skin Deserves the Best—Let’s Reconnect!</p>
+            <p><strong>Body:</strong></p>
+            <p>It’s been some time since your last visit, and we truly miss you! At SA BEAUTÉ NATURELLE, we’re committed to giving your skin the nourishment it deserves—glycerin-rich, palm oil-free, handcrafted soaps made with the purest ingredients.</p>
+            <p>As a little gift to welcome you back, here’s 10% off your next order. Just use code COME BACK10 at checkout.</p>
+            <p>✨ Your skin deserves it. Experience luxury, hydration, and sustainability in every bar.</p>
+            <a href="#">Claim Your Offer</a>
+            <p>Hurry! This exclusive discount expires in 72 hours.</p>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 2: Still Thinking About It? Here’s Why You’ll Love Us Again!</h3>
+            <p><strong>Subject:</strong> Why Our Customers Keep Coming Back 🌿</p>
+            <p><strong>Preview Text:</strong> Handmade, eco-friendly, and designed for glowing skin.</p>
+            <p><strong>Header:</strong> Discover Why SA BEAUTÉ NATURELLE Stands Apart</p>
+            <p><strong>Body:</strong></p>
+            <p>We get it—life gets busy. But we wanted to remind you why our customers keep coming back to our handcrafted, skin-loving soaps.</p>
+            <ul>
+                <li>✔️ Glycerin-Rich Hydration – We keep the glycerin for superior moisture.</li>
+                <li>✔️ 100% Palm Oil-Free – No harsh additives, just pure nourishment.</li>
+                <li>✔️ Sustainable & Ethical – $1 from every soap purchase goes to WWF.</li>
+                <li>✔️ Made for Sensitive Skin – No parabens, no sulfates—just natural luxury.</li>
+            </ul>
+            <p>Reignite your skincare ritual with 10% off your next purchase. Use COME BACK10 at checkout!</p>
+            <a href="#">Shop Now</a>
+            <p>Expires in 48 hours!</p>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 3: Last Chance! Your Exclusive Discount Ends Soon</h3>
+            <p><strong>Subject:</strong> Final Reminder: Your 10% Off Expires Tonight!</p>
+            <p><strong>Preview Text:</strong> Your exclusive offer disappears at midnight!</p>
+            <p><strong>Header:</strong> This is Your Last Chance to Save!</p>
+            <p><strong>Body:</strong></p>
+            <p>Just a quick reminder—your 10% discount expires tonight!</p>
+            <p>Replenish your skin with our ultra-moisturizing, handmade soaps. You won’t find another brand like ours—luxurious, skin-friendly, and eco-conscious.</p>
+            <a href="#">Redeem Your Offer Now</a>
+            <p>Hurry, this exclusive deal vanishes at midnight! ⏳</p>
+        </div>
+    </div>
+
+    <div class="email-section" id="vip-loyalty-flow">
+        <h2>VIP & Loyalty Flow (4-Email Sequence)</h2>
+
+        <div class="email-section">
+            <h3>Email 1: Welcome to the VIP Circle 🌟</h3>
+            <p><strong>Subject:</strong> You’re In! Exclusive Perks Await 🎁</p>
+            <p><strong>Preview Text:</strong> As one of our best customers, you deserve something special!</p>
+            <p><strong>Header:</strong> You’re Officially a VIP—Here’s What That Means</p>
+            <p><strong>Body:</strong></p>
+            <p>You’re not just a customer—you’re part of the SA BEAUTÉ NATURELLE family! 💛 Your support for clean, palm oil-free skincare and sustainable beauty means the world to us.</p>
+            <p>As a VIP, you’ll enjoy:</p>
+            <ul>
+                <li>✨ Exclusive Discounts & Early Access – Be the first to shop new products and sales.</li>
+                <li>✨ Birthday Perks – A special gift, just for you. 🎉</li>
+                <li>✨ Sneak Peeks & Freebies – Be in the know before anyone else!</li>
+            </ul>
+            <p>Because we appreciate you, enjoy 15% OFF your next purchase! Use code VIP15 at checkout.</p>
+            <a href="#">Claim Your VIP Reward</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 2: Your VIP Perks Just Got Better!</h3>
+            <p><strong>Subject:</strong> More Rewards, Just for You! 🎁</p>
+            <p><strong>Preview Text:</strong> You’re a VIP, and that means more exclusive perks.</p>
+            <p><strong>Header:</strong> Get Rewarded for Every Purchase!</p>
+            <p><strong>Body:</strong></p>
+            <p>As a VIP, we want to make every purchase more rewarding! 🌿💫</p>
+            <ul>
+                <li>🎁 Earn points for every dollar spent</li>
+                <li>💖 Redeem points for discounts and free products</li>
+                <li>🚀 Surprise gifts & double point days!</li>
+            </ul>
+            <p>Start earning today! Every order brings you closer to free products and bigger discounts.</p>
+            <a href="#">Start Earning Rewards</a>
+            <p>(P.S. Your VIP15 code is still valid—don’t forget to use it!)</p>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 3: Limited-Time VIP Exclusive—Double Points Weekend!</h3>
+            <p><strong>Subject:</strong> This Weekend Only: Double Your Rewards!</p>
+            <p><strong>Preview Text:</strong> Earn twice the points on all purchases for the next 48 hours.</p>
+            <p><strong>Header:</strong> 48 Hours Only—Earn 2X Rewards on Every Order!</p>
+            <p><strong>Body:</strong></p>
+            <p>Because you’re a VIP, we’re giving you double points on every purchase this weekend!</p>
+            <ul>
+                <li>✨ 2X points on all orders</li>
+                <li>✨ Stack your points for bigger rewards</li>
+                <li>✨ Only for VIPs like you!</li>
+            </ul>
+            <p>Don’t miss out—this exclusive event ends in 48 hours!</p>
+            <a href="#">Shop & Earn 2X Points</a>
+        </div>
+
+        <div class="email-section">
+            <h3>Email 4: Your Loyalty Points Are Waiting!</h3>
+            <p><strong>Subject:</strong> Redeem Your Rewards Before They Expire!</p>
+            <p><strong>Preview Text:</strong> You’ve earned rewards—now it’s time to treat yourself!</p>
+            <p><strong>Header:</strong> Your Exclusive VIP Rewards Are Ready 🎁</p>
+            <p><strong>Body:</strong></p>
+            <p>You’ve been racking up points—now it’s time to treat yourself! 🌿</p>
+            <p>Here’s what you can redeem right now:</p>
+            <ul>
+                <li>✔️ $5 off – 100 points</li>
+                <li>✔️ $10 off – 200 points</li>
+                <li>✔️ Free soap bar – 500 points</li>
+            </ul>
+            <p>Your points expire soon, so don’t wait!</p>
+            <a href="#">Redeem My Rewards</a>
+        </div>
+    </div>
+
 </div>
 
-<div class="email-section">
-    <h2>Abandoned Cart Flow (3-Email Sequence)</h2>
-
-    <div class="email-section">
-        <h3>Email 1: You Left Something Special Behind (Sent 1 Hour After Abandonment)</h3>
-        <p><strong>Subject:</strong> Oops, you forgot something… but your cart is waiting!</p>
-        <p><strong>Preview Text:</strong> Your luxury skincare awaits—come back and complete your order.</p>
-        <p><strong>Header:</strong> Your Skin Deserves This 💖</p>
-        <p><strong>Body:</strong></p>
-        <p>We noticed you left some skin-loving, nature-powered products behind! Your cart is still waiting for you, and so is luxuriously soft, hydrated skin.</p>
-        <p>✨ Why come back?</p>
-        <ul>
-            <li>✔️ Glycerin-Rich Moisture – Unlike other brands, we retain all the glycerin for superior hydration.</li>
-            <li>✔️ Palm Oil-Free – Protect your skin and the planet.</li>
-            <li>✔️ Handcrafted & Small Batch – Made with premium organic oils and fresh goat’s milk.</li>
-            <li>✔️ Eco-Conscious Giving – Every purchase supports the World Wildlife Fund.</li>
-        </ul>
-        <p>🛍️ Come back now and complete your order before your favorites sell out!</p>
-        <a href="#">Return to Your Cart</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 2: Your Skin Will Thank You (And So Will the Planet!) (Sent 24 Hours Later)</h3>
-        <p><strong>Subject:</strong> A little reminder: Your cart is waiting!</p>
-        <p><strong>Preview Text:</strong> Nourishing, palm oil-free skincare is just one step away.</p>
-        <p><strong>Header:</strong> Still Thinking About It? Here’s Why You’ll Love It 💕</p>
-        <p><strong>Body:</strong></p>
-        <p>We totally get it—life gets busy. But your skin deserves the best, and so do you!</p>
-        <p>🌿 What makes SA BEAUTÉ NATURELLE different?</p>
-        <ul>
-            <li>✔️ We retain all the glycerin for extra moisture—most brands remove it.</li>
-            <li>✔️ Fresh Goat’s Milk & Shea Butter deeply nourish sensitive skin.</li>
-            <li>✔️ Zero Palm Oil & Toxins—just pure, skin-loving goodness.</li>
-            <li>✔️ $1 donated to WWF with every soap purchase.</li>
-        </ul>
-        <p>📦 Your cart is still here, but we can’t hold it forever! Complete your order today and treat your skin to the luxury it deserves.</p>
-        <a href="#">Return to Your Cart</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 3: Final Call – Your Cart Is About to Expire! (Sent 48 Hours Later)</h3>
-        <p><strong>Subject:</strong> Last Chance! Your cart is expiring soon.</p>
-        <p><strong>Preview Text:</strong> Don’t miss out—your skin deserves this luxury.</p>
-        <p><strong>Header:</strong> 🚨 Your Cart Is Almost Gone!</p>
-        <p><strong>Body:</strong></p>
-        <p>This is your last reminder—your cart is about to expire, and we wouldn’t want you to miss out on hydrated, healthy skin.</p>
-        <p>✨ Still deciding? Let’s make it easier:</p>
-        <ul>
-            <li>✔️ Fast shipping – Your order will be on its way in no time!</li>
-            <li>✔️ Small-batch luxury – We don’t mass-produce, so stock is limited.</li>
-            <li>✔️ 100% satisfaction guarantee – We know you’ll love it!</li>
-        </ul>
-        <p>⚡ Complete your order now before your items disappear!</p>
-        <a href="#">Return to Your Cart</a>
-    </div>
-</div>
-    <div class="email-section">
-    <h2>Browse Abandonment Flow (3-Email Sequence)</h2>
-
-    <div class="email-section">
-        <h3>Email 1: Thinking About It? Here’s Why You’ll Love It! (Sent 1 Hour After Browsing)</h3>
-        <p><strong>Subject:</strong> Loved by skin. Approved by nature. 💚</p>
-        <p><strong>Preview Text:</strong> Natural, palm oil-free skincare designed for you.</p>
-        <p><strong>Header:</strong> Did Something Catch Your Eye? 👀</p>
-        <p><strong>Body:</strong></p>
-        <p>We noticed you were exploring our luxurious, handcrafted skincare—and we don’t blame you! Each product is made with skin-nourishing ingredients like fresh goat’s milk, shea butter, and organic oils, designed to leave your skin soft, hydrated, and glowing.</p>
-        <p>🌿 What makes SA BEAUTÉ NATURELLE different?</p>
-        <ul>
-            <li>✔️ Palm Oil-Free – No rainforest destruction, just pure, clean skincare.</li>
-            <li>✔️ Glycerin-Rich – Unlike big brands, we keep all the natural moisture in.</li>
-            <li>✔️ Handcrafted in Small Batches – No mass production, just quality.</li>
-            <li>✔️ Giving Back – Every soap purchase donates $1 to the WWF.</li>
-        </ul>
-        <p>✨ Your skin deserves the best—why not treat yourself today?</p>
-        <a href="#">Shop Now</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 2: Your Skin Will Thank You! (Sent 24 Hours Later)</h3>
-        <p><strong>Subject:</strong> Nature’s best ingredients—ready when you are.</p>
-        <p><strong>Preview Text:</strong> Clean, nourishing skincare made for you.</p>
-        <p><strong>Header:</strong> Skin-Loving, Earth-Friendly, and Waiting for You 💖</p>
-        <p><strong>Body:</strong></p>
-        <p>Still thinking about it? We get it—choosing the right skincare matters. That’s why we craft every bar with nature’s most hydrating and soothing ingredients to give your skin the love it deserves.</p>
-        <p>🌟 The SA BEAUTÉ NATURELLE Difference</p>
-        <ul>
-            <li>✔️ Shea Butter & Fresh Goat’s Milk – Deeply nourish & restore moisture.</li>
-            <li>✔️ 100% Palm Oil-Free – Gentle on skin, kind to the planet.</li>
-            <li>✔️ Rich in Vitamins & Antioxidants – Supports skin health naturally.</li>
-        </ul>
-        <p>💚 Your perfect skincare match is waiting. Ready to experience the difference?</p>
-        <a href="#">Discover the Collection</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 3: Limited Stock Alert – Your Favorites Might Sell Out! (Sent 48 Hours Later)</h3>
-        <p><strong>Subject:</strong> Don’t wait too long… our handmade products sell fast!</p>
-        <p><strong>Preview Text:</strong> Get yours before it’s gone!</p>
-        <p><strong>Header:</strong> 🌿 Handcrafted in Small Batches—Don’t Miss Out!</p>
-        <p><strong>Body:</strong></p>
-        <p>Our products aren’t mass-produced, which means once they’re gone, they’re gone. If you were eyeing one of our bestsellers, now’s the time to grab it before it sells out!</p>
-        <p>🚨 Limited Stock Alert:</p>
-        <ul>
-            <li>✔️ 100% Natural & Small-Batch – No artificial junk, just pure skincare.</li>
-            <li>✔️ Palm Oil-Free & Eco-Friendly – Feel good about what you put on your skin.</li>
-            <li>✔️ $1 Donated to WWF – Your purchase supports wildlife conservation.</li>
-        </ul>
-        <p>⏳ Don’t let your favorites slip away—shop now while they’re still available!</p>
-        <a href="#">Get Yours Now</a>
-    </div>
-</div>
-
-<div class="email-section">
-    <h2>Post-Purchase Flow (5-Email Sequence)</h2>
-
-    <div class="email-section">
-        <h3>Email 1: Order Confirmation & Warm Welcome (Sent Immediately After Purchase)</h3>
-        <p><strong>Subject:</strong> Your Order is Confirmed! Here’s What’s Next 💚</p>
-        <p><strong>Preview Text:</strong> Thank you for choosing SA BEAUTÉ NATURELLE! Your skin (and the planet) will thank you.</p>
-        <p><strong>Header:</strong> Thank You for Your Order! 🌿</p>
-        <p><strong>Body:</strong></p>
-        <p>Your SA BEAUTÉ NATURELLE products are on their way! We’re so excited for you to experience the luxury of natural, palm oil-free skincare.</p>
-        <p>✨ What makes your order special?</p>
-        <ul>
-            <li>✔️ Glycerin-Rich & Moisturizing – Unlike commercial soaps, we retain all-natural hydration.</li>
-            <li>✔️ 100% Palm Oil-Free – A choice that’s better for your skin and the planet.</li>
-            <li>✔️ $1 Donated to WWF – With every soap you buy, you help protect wildlife.</li>
-        </ul>
-        <p>📦 Order Details: [Order Summary]</p>
-        <p>💌 Follow us on Instagram for skincare tips & exclusive offers! [Follow Us]</p>
-        <p>Thank you for supporting small-batch, eco-conscious skincare!</p>
-        <a href="#">View Your Order</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 2: How to Get the Most Out of Your Products (Sent 3 Days After Delivery)</h3>
-        <p><strong>Subject:</strong> Tips to Make Your Skincare Last Longer!</p>
-        <p><strong>Preview Text:</strong> Maximize the benefits of your handcrafted soap & washcloth.</p>
-        <p><strong>Header:</strong> Your Skincare Experience Just Got Better ✨</p>
-        <p><strong>Body:</strong></p>
-        <p>Your SA BEAUTÉ NATURELLE products are designed for luxurious self-care. Here’s how to make the most of them:</p>
-        <p>🧼 For Your Soap:</p>
-        <p>Use a soap dish with drainage to keep it dry between uses (this helps it last longer!).</p>
-        <p>Pair with our Bamboo Washcloth for gentle exfoliation & deeper cleansing.</p>
-        <p>Store in a cool, dry place to maintain freshness.</p>
-        <p>🌿 For Your Bamboo Washcloth:</p>
-        <p>Machine wash cold & air dry for the best longevity.</p>
-        <p>Avoid fabric softeners—bamboo stays soft naturally!</p>
-        <p>💖 Enjoy your skin-loving routine, and let us know if you have any questions!</p>
-        <a href="#">Read More Tips</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 3: We’d Love Your Feedback! (Sent 7 Days After Delivery)</h3>
-        <p><strong>Subject:</strong> Love Your New Skincare? Let Us Know! 💬</p>
-        <p><strong>Preview Text:</strong> Your experience matters. Share your thoughts & help others!</p>
-        <p><strong>Header:</strong> Your Honest Review Means the World to Us! 🌍</p>
-        <p><strong>Body:</strong></p>
-        <p>You’ve had time to experience your handcrafted, eco-friendly skincare—now we’d love to hear what you think!</p>
-        <p>💬 Why leave a review?</p>
-        <ul>
-            <li>✔️ Help fellow skincare lovers discover the right products.</li>
-            <li>✔️ Support a small business that cares about quality & sustainability.</li>
-            <li>✔️ Be part of our mission to create ethical, palm oil-free skincare.</li>
-        </ul>
-        <p>It only takes 30 seconds, and as a thank-you, you’ll get 10% off your next order!</p>
-        <a href="#">Leave a Review</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 4: Exclusive Thank-You Offer (Sent 14 Days After Delivery)</h3>
-        <p><strong>Subject:</strong> A Special Thank-You – Just for You! 🎁</p>
-        <p><strong>Preview Text:</strong> Enjoy 15% off your next purchase as a token of our appreciation.</p>
-        <p><strong>Header:</strong> A Gift for You: 15% Off Your Next Order! 🎉</p>
-        <p><strong>Body:</strong></p>
-        <p>We’re so grateful to have you as part of the SA BEAUTÉ NATURELLE family! As a token of our appreciation, here’s 15% off your next order.</p>
-        <p>✨ Use Code: THANKYOU15 at checkout.</p>
-        <p>📌 Why shop again?</p>
-        <ul>
-            <li>✔️ Limited-edition, small-batch products – Once they’re gone, they’re gone!</li>
-            <li>✔️ Skin-Loving Ingredients – Organic oils, goat’s milk & shea butter for ultimate hydration.</li>
-            <li>✔️ Every Purchase Gives Back – Your support helps protect wildlife.</li>
-        </ul>
-        <a href="#">Redeem Your 15% Off</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 5: What’s Next? (Loyalty & Referral Incentive) (Sent 21 Days After Delivery)</h3>
-        <p><strong>Subject:</strong> Be a Skincare Insider – Get Rewards!</p>
-        <p><strong>Preview Text:</strong> Get rewarded for sharing your favorite skincare.</p>
-        <p><strong>Header:</strong> Love Your Skincare? Share & Earn Rewards! 🎉</p>
-        <p><strong>Body:</strong></p>
-        <p>You’ve found your perfect skincare match—now, why not share it?</p>
-        <p>🌟 Join Our Referral Program!</p>
-        <p>📣 Give 15%, Get 15% – Share SA BEAUTÉ NATURELLE with a friend, and both of you get 15% off.</p>
-        <p>✨ Why refer a friend?</p>
-        <ul>
-            <li>✔️ Help someone discover luxurious, skin-nourishing products.</li>
-            <li>✔️ Support palm oil-free, eco-conscious skincare.</li>
-            <li>✔️ Earn exclusive perks & discounts!</li>
-        </ul>
-        <a href="#">Refer a Friend & Save</a>
-    </div>
-</div>
-
-    <div class="email-section">
-    <h2>Winback/Re-Engagement Flow (3-Email Sequence)</h2>
-
-    <div class="email-section">
-        <h3>Email 1: We Miss You! Enjoy a Special Treat 🎁</h3>
-        <p><strong>Subject:</strong> It’s Been a While—Here’s 10% Off Just for You!</p>
-        <p><strong>Preview Text:</strong> Come back and experience the luxury of natural skincare again.</p>
-        <p><strong>Header:</strong> Your Skin Deserves the Best—Let’s Reconnect!</p>
-        <p><strong>Body:</strong></p>
-        <p>It’s been some time since your last visit, and we truly miss you! At SA BEAUTÉ NATURELLE, we’re committed to giving your skin the nourishment it deserves—glycerin-rich, palm oil-free, handcrafted soaps made with the purest ingredients.</p>
-        <p>As a little gift to welcome you back, here’s 10% off your next order. Just use code COME BACK10 at checkout.</p>
-        <p>✨ Your skin deserves it. Experience luxury, hydration, and sustainability in every bar.</p>
-        <a href="#">Claim Your Offer</a>
-        <p>Hurry! This exclusive discount expires in 72 hours.</p>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 2: Still Thinking About It? Here’s Why You’ll Love Us Again!</h3>
-        <p><strong>Subject:</strong> Why Our Customers Keep Coming Back 🌿</p>
-        <p><strong>Preview Text:</strong> Handmade, eco-friendly, and designed for glowing skin.</p>
-        <p><strong>Header:</strong> Discover Why SA BEAUTÉ NATURELLE Stands Apart</p>
-        <p><strong>Body:</strong></p>
-        <p>We get it—life gets busy. But we wanted to remind you why our customers keep coming back to our handcrafted, skin-loving soaps.</p>
-        <ul>
-            <li>✔️ Glycerin-Rich Hydration – We keep the glycerin for superior moisture.</li>
-            <li>✔️ 100% Palm Oil-Free – No harsh additives, just pure nourishment.</li>
-            <li>✔️ Sustainable & Ethical – $1 from every soap purchase goes to WWF.</li>
-            <li>✔️ Made for Sensitive Skin – No parabens, no sulfates—just natural luxury.</li>
-        </ul>
-        <p>Reignite your skincare ritual with 10% off your next purchase. Use COME BACK10 at checkout!</p>
-        <a href="#">Shop Now</a>
-        <p>Expires in 48 hours!</p>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 3: Last Chance! Your Exclusive Discount Ends Soon</h3>
-        <p><strong>Subject:</strong> Final Reminder: Your 10% Off Expires Tonight!</p>
-        <p><strong>Preview Text:</strong> Your exclusive offer disappears at midnight!</p>
-        <p><strong>Header:</strong> This is Your Last Chance to Save!</p>
-        <p><strong>Body:</strong></p>
-        <p>Just a quick reminder—your 10% discount expires tonight!</p>
-        <p>Replenish your skin with our ultra-moisturizing, handmade soaps. You won’t find another brand like ours—luxurious, skin-friendly, and eco-conscious.</p>
-        <a href="#">Redeem Your Offer Now</a>
-        <p>Hurry, this exclusive deal vanishes at midnight! ⏳</p>
-    </div>
-</div>
-
-<div class="email-section">
-    <h2>VIP & Loyalty Flow (4-Email Sequence)</h2>
-
-    <div class="email-section">
-        <h3>Email 1: Welcome to the VIP Circle 🌟</h3>
-        <p><strong>Subject:</strong> You’re In! Exclusive Perks Await 🎁</p>
-        <p><strong>Preview Text:</strong> As one of our best customers, you deserve something special!</p>
-        <p><strong>Header:</strong> You’re Officially a VIP—Here’s What That Means</p>
-        <p><strong>Body:</strong></p>
-        <p>You’re not just a customer—you’re part of the SA BEAUTÉ NATURELLE family! 💛 Your support for clean, palm oil-free skincare and sustainable beauty means the world to us.</p>
-        <p>As a VIP, you’ll enjoy:</p>
-        <ul>
-            <li>✨ Exclusive Discounts & Early Access – Be the first to shop new products and sales.</li>
-            <li>✨ Birthday Perks – A special gift, just for you. 🎉</li>
-            <li>✨ Sneak Peeks & Freebies – Be in the know before anyone else!</li>
-        </ul>
-        <p>Because we appreciate you, enjoy 15% OFF your next purchase! Use code VIP15 at checkout.</p>
-        <a href="#">Claim Your VIP Reward</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 2: Your VIP Perks Just Got Better!</h3>
-        <p><strong>Subject:</strong> More Rewards, Just for You! 🎁</p>
-        <p><strong>Preview Text:</strong> You’re a VIP, and that means more exclusive perks.</p>
-        <p><strong>Header:</strong> Get Rewarded for Every Purchase!</p>
-        <p><strong>Body:</strong></p>
-        <p>As a VIP, we want to make every purchase more rewarding! 🌿💫</p>
-        <ul>
-            <li>🎁 Earn points for every dollar spent</li>
-            <li>💖 Redeem points for discounts and free products</li>
-            <li>🚀 Surprise gifts & double point days!</li>
-        </ul>
-        <p>Start earning today! Every order brings you closer to free products and bigger discounts.</p>
-        <a href="#">Start Earning Rewards</a>
-        <p>(P.S. Your VIP15 code is still valid—don’t forget to use it!)</p>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 3: Limited-Time VIP Exclusive—Double Points Weekend!</h3>
-        <p><strong>Subject:</strong> This Weekend Only: Double Your Rewards!</p>
-        <p><strong>Preview Text:</strong> Earn twice the points on all purchases for the next 48 hours.</p>
-        <p><strong>Header:</strong> 48 Hours Only—Earn 2X Rewards on Every Order!</p>
-        <p><strong>Body:</strong></p>
-        <p>Because you’re a VIP, we’re giving you double points on every purchase this weekend!</p>
-        <ul>
-            <li>✨ 2X points on all orders</li>
-            <li>✨ Stack your points for bigger rewards</li>
-            <li>✨ Only for VIPs like you!</li>
-        </ul>
-        <p>Don’t miss out—this exclusive event ends in 48 hours!</p>
-        <a href="#">Shop & Earn 2X Points</a>
-    </div>
-
-    <div class="email-section">
-        <h3>Email 4: Your Loyalty Points Are Waiting!</h3>
-        <p><strong>Subject:</strong> Redeem Your Rewards Before They Expire!</p>
-        <p><strong>Preview Text:</strong> You’ve earned rewards—now it’s time to treat yourself!</p>
-        <p><strong>Header:</strong> Your Exclusive VIP Rewards Are Ready 🎁</p>
-        <p><strong>Body:</strong></p>
-        <p>You’ve been racking up points—now it’s time to treat yourself! 🌿</p>
-        <p>Here’s what you can redeem right now:</p>
-        <ul>
-            <li>✔️ $5 off – 100 points</li>
-            <li>✔️ $10 off – 200 points</li>
-            <li>✔️ Free soap bar – 500 points</li>
-        </ul>
-        <p>Your points expire soon, so don’t wait!</p>
-        <a href="#">Redeem My Rewards</a>
-    </div>
-</div>
-    
 </body>
 </html>
